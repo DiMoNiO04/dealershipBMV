@@ -14,9 +14,18 @@ body{
 	box-sizing: border-box;
 }
 
-p, h1, h2, h3{
+p, h1, h2, h3, ul{
 	margin: 0;
 	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+li{
+	list-style-type: none;
 }
 
 .red{
@@ -38,26 +47,16 @@ p, h1, h2, h3{
 	font-weight: 700;
 }
 
-header ul{
-	margin: 0;
-	padding: 0;
-}
-
-header li{
-	list-style-type: none;
-}
-
-.header__container{
+.header__container,
+.header__active{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 40px ;
-	border-bottom: 1px solid #FFFFFF;
 }
 
-.header__container a{
-	text-decoration: none;
-	color: #FFFFFF;
+.header__container{
+	padding-top: 40px ;
+	border-bottom: 1px solid #FFFFFF;
 }
 
 .header__list{
@@ -73,13 +72,10 @@ header li{
 .header__item:hover{
 	border-bottom: 3px solid #FFFFFF;
 	cursor: pointer;
-	transition: all 0.5s;
+	transition: all 0.5s ease-in-out;
 }
 
 .header__active{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	column-gap: 30px;
 }
 
@@ -93,7 +89,6 @@ header li{
 .header__cab, .header__cab li{
 	display: block;
 	font-size: 1.2rem;
-	text-decoration: none;
 	padding: 16px 10px;
 }
 
@@ -195,14 +190,12 @@ header li{
 	border-radius: 10px;
 	background-color: rgb(127, 127, 244);
 	width: 50%;
-	transition: all 0.5s;
+	transition: all 0.5s ease-in-out;
 }
 
 .button a{
 	font-size: 20px;
 	font-weight: 500;
-	color: #FFFFFF;
-	text-decoration: none;
 }
 
 .button:hover{
@@ -305,7 +298,7 @@ header li{
 
 .service__item:hover{
 	transform: scale(1.1);
-	transition: all 1s;
+	transition: all 1s ease-in-out;
 	cursor: pointer;
 }
 
@@ -324,3 +317,93 @@ header li{
 	width: 30%;
 }
 /*--------Section service end----------*/
+
+
+/*--------Footer start----------------*/
+.footer{
+	padding: 20px 0;
+	background-color: rgb(33, 33, 53);
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.footer__container{
+	flex-direction: column;
+	row-gap: 16px;
+}
+
+.footer__container,
+.footer__container
+.footer__content,
+.footer__author{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.footer__content{
+	border-bottom: 1px solid #FFFFFF;
+	padding-bottom: 8px;
+}
+
+.footer__logo-bmw img{
+	width: 40px;
+}
+
+.footer__items{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 50px;
+}
+
+.footer__item{
+	padding: 10px;
+	border-bottom: 3px solid transparent;
+}
+
+.footer__item:hover{
+	border-bottom: 3px solid #FFFFFF;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.footer__socials{
+	display: flex;
+	column-gap: 20px;
+}
+
+.social__icon{
+	font-size: 30px;
+	color:  rgb(5, 215, 215);
+	transition: all 0.5s ease-in-out;
+}
+
+.social__icon:hover{
+	color: aqua;
+	transform: scale(1.1);
+}
+
+.footer__author{
+	font-size: 14px;
+	font-weight: 300;
+	justify-content: flex-end;
+	column-gap: 20px;
+}
+
+.footer__author span{
+	font-weight: 700;
+}
+
+.author__mail{
+	color: rgb(5, 215, 215);
+	border-bottom: 1px solid transparent;
+}
+
+.author__mail:hover{
+	color: aqua;
+	border-bottom: 1px solid aqua;
+	transition: all 1s ease-in-out;
+}
+/*-------Footer end-------------------*/
