@@ -109,43 +109,84 @@ header li{
 
 
 
-/*------Section start----------*/
-.section__start{
+/*------Section start, about, contact----------*/
+.start{
 	background: url(../assets/img/main.jpg) no-repeat center;
 	background-size: cover;
-	height: 600px;
+	height: auto;
 	width: 100%;
-	padding-top: 220px;
+	padding: 220px 0 450px 0;
 }
 
-.start__container{
+.contacts{
+	background: url('../assets/img/contacts.jpg') no-repeat center;
+}
+
+.about{
+	background: url(../assets/img/about.jpg) no-repeat center;
+}
+
+.about,
+.contacts{
+	margin-top: 100px;
+	padding: 110px 0 460px 0;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+}
+
+.start__container,
+.about__container, 
+.contact__container{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: baseline;
 }
 
-.start__desc, .about__desc{
+.start__desc,
+.about__desc, 
+.contact__desc{
 	text-align: right;
 	font-size: 24px;
 	font-style: italic;
 }
 
-.start__desc span, .about__desc span{
+.start__desc span, 
+.about__desc span, 
+.contact__desc span{
 	font-weight: 700;
 	font-size: 28px;
 }
 
-.start__title, .about__title{
+.start__title, 
+.about__title, 
+.contact__title{
 	font-style: italic;
 	text-transform: uppercase;
-	font-size: 36px;
+	font-size: 32px;
 }
 
-.start__newcar, .about__newcar{
+.start__newcar, 
+.about__newcar, 
+.contacts__content{
 	display: flex;
 	flex-direction: column;
 	row-gap: 30px;
+}
+
+.contact__item,
+.about__item,
+.start__item{
+	display: flex;
+	column-gap: 20px;
+}
+
+.contact__item img,
+.about__item img,
+.start__item img{
+	width: 100px;
+	height: auto;
 }
 
 .button{
@@ -168,7 +209,7 @@ header li{
 	background-color:rgb(95, 95, 249);
 	cursor: pointer;
 }
-/*--------Section start end----------------*/
+/*--------Section start, about, contact end----------------*/
 
 
 
@@ -210,27 +251,9 @@ header li{
 /*--------Section cars end-------------*/
 
 
-/*--------Section about start----------*/
-.about{
-	margin-top: 100px;
-	background: url(../assets/img/about.jpg) no-repeat center;
-	width: 100%;
-	height: 700px;
-	background-size: cover;
-}
-
-.about__container{
-	padding-top: 70px;
-	display: flex;
-	justify-content: space-between;
-}
-/*--------Section end start------------*/
-
-
 /*--------Section service start--------*/
 .service{
 	margin-top: 100px;
-	margin-bottom: 200px;
 }
 
 .service__title{
@@ -288,7 +311,7 @@ header li{
 
 .bg-fon{
 	background-color:rgba(0,0,0,.4);
-	height:100%;
+	height: 99%;
 	position:absolute;
 	width:100%;
 	top:0;
