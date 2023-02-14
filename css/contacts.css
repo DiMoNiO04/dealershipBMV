@@ -1,0 +1,100 @@
+.header{
+	position: relative;
+	background-color: rgb(33, 33, 53);
+}
+
+.header__container{
+	padding-bottom: 10px;
+	border-bottom: none;
+}
+
+.header__logout{
+	padding: 15px 10px;
+	background-color: rgb(33, 33, 53);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+main{
+	background-color:  #e1e1e1;
+}
+
+.contacts{
+	color: black;
+}
+
+.contacts__container{
+	display: flex;
+	flex-direction: column;
+	row-gap: 80px;
+	padding: 100px 0;
+}
+
+.contact__images{
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact__images img{
+	width: 40%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.contacts__list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 70px;
+	column-gap: 50px;
+	align-items: center;
+}
+
+.contact__title{
+	font-size: 32px;
+	font-weight: 300;
+	letter-spacing: 12px;
+}
+
+
+.contact__item,
+.address__content{
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+	width: 30%;
+}
+
+.contact__subtitle,
+.address__title{
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 400;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+	height: 50px;
+}
+
+.contact__phone h3,
+.contact__email h3,
+.contact__time h3,
+.address__gps h3,
+.address__time h3{
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.contact__phone p,
+.contact__email p,
+.contact__time p,
+.address__content p{
+	font-weight: 300;
+}
+
+
+.contact__address{
+	display: flex;
+	column-gap: 100px;
+	align-items: flex-start;
+	justify-content: center;
+}
