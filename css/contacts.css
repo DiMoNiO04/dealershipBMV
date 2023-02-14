@@ -1,10 +1,8 @@
 .header{
-	position: relative;
 	background-color: rgb(33, 33, 53);
 }
 
 .header__container{
-	padding-bottom: 10px;
 	border-bottom: none;
 }
 
@@ -27,7 +25,7 @@ main{
 	display: flex;
 	flex-direction: column;
 	row-gap: 80px;
-	padding: 100px 0;
+	padding: 210px 0;
 }
 
 .contact__images{
