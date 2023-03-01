@@ -120,7 +120,7 @@ main{
 }
 
 .order__titles h2{
-	font-size: 20px;
+	font-size: 22px;
 	width: 25%;
 }
 
@@ -130,8 +130,9 @@ main{
 }
 
 .order span{
-	font-size: 18px;
+	font-size: 20px;
 	width: 25%;
+	padding: 10px;
 }
 /*------Personal orders end---------------*/
 

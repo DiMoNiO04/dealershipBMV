@@ -1,0 +1,138 @@
+.header{
+	background-color: rgb(33, 33, 53);
+}
+
+.header__container{
+	border-bottom: none;
+}
+
+.header__logout{
+	padding: 15px 10px;
+	background-color: rgb(33, 33, 53);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+main{
+	background-color:  #e1e1e1;
+	color: black;
+}
+
+
+/*-------Panel start------------*/
+.panel__container{
+	padding: 180px 0 100px 0;
+	display: flex;
+	column-gap: 50px;
+}
+/*------Panel end---------------*/
+
+
+
+/*-------Sidebar start------------*/
+.sidebar{
+	background: rgb(96, 96, 146);
+	height: 400px;
+	padding: 16px 10px;
+	width: 20%;
+}
+
+.sidebar ul a{
+	padding: 18px;
+	display: block;
+	border-bottom: 1px solid rgb(33, 33, 53);
+	font-size: 18px;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.sidebar ul a:hover{
+	margin-left: -10px;
+	cursor: pointer;
+	transition: all 0.25s ease-in-out;
+}
+/*-------Sidebar end--------------*/
+
+
+
+/*--------Panel body start----------*/
+.panel__button{
+	padding: 12px 24px;
+	background:  #198754;
+	border: 2px solid green;
+	font-size: 16px;
+	font-weight: 700;
+	color: black;
+	width: 20%;
+	margin-bottom: 20px;
+}
+
+.panel__button:hover{
+	background: green;
+}
+
+.panel__title{
+	font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 8px;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.panel__body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	row-gap: 16px;
+	width: 70%;
+}
+
+.panel__titles,
+.panel__block{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.panel__titles h2:first-child,
+.panel__block span:first-child{
+	width: 10%;
+}
+
+.panel__titles h2{
+	font-size: 22px;
+	width: 22%;
+}
+
+.panel__block{
+	padding-bottom: 6px;
+	border-bottom: 1px solid grey;
+}
+
+.panel__block span{
+	font-size: 20px;
+	width: 22%;
+	padding: 10px 0;
+}
+
+.panel__buttons{
+	display: flex;
+	column-gap: 20px;
+}
+
+.panel__edit{
+	color: #198754;
+	font-size: 18px;
+}
+
+.panel__del{
+	font-size: 18px;
+	color: red;
+}
+
+.panel__del:hover,
+.panel__edit:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+/*--------Panel body end------------*/
